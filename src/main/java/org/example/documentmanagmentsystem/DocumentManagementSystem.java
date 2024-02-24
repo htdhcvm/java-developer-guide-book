@@ -21,22 +21,20 @@ public class DocumentManagementSystem {
         File file = new File(path);
         if (!file.exists()) throw new FileNotFoundException("File not found " + path);
 
-        final String extension = getExtension(path);
-
-
+//        final String extension = getExtension(path);
     }
 
-    private String getExtension(String path) throws IOException {
-        final int findPoint = path.lastIndexOf(".");
-
-        if (findPoint == -1) {
-            throw new IOException("No extension found For file: " + path);
-        }
-
-        if (findPoint == path.length()) {
-            throw new IOException("No extension found For file: " + path);
-        }
-
-        return path.substring(separatorIndex + 1);
-    }
+//    private String getExtension(String path) throws IOException {
+//        final int findPoint = path.lastIndexOf(".");
+//
+//        if (findPoint == -1) {
+//            throw new IOException("No extension found For file: " + path);
+//        }
+//
+//        if (findPoint == path.length()) {
+//            throw new IOException("No extension found For file: " + path);
+//        }
+//
+//        return path.substring(separatorIndex + 1);
+//    }
 }
